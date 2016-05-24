@@ -1,1 +1,0 @@
-# saman_phonegap
