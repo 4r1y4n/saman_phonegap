@@ -713,6 +713,8 @@
     "mma.mod_forum.reply": "Rispondi",
     "mma.mod_forum.subject": "Oggetto",
     "mma.mod_glossary.browsemode": "Modalità anteprima",
+    "mma.mod_imscp.deploymenterror": "Si è verificato un errore nel content package!",
+    "mma.mod_imscp.showmoduledescription": "Visualizza descrizione",
     "mma.mod_label.label": "Etichetta",
     "mma.mod_label.taptoview": "Tocca per visualizzare l'etichetta.",
     "mma.mod_lti.errorgetlti": "Si è verificato un errore durante la ricezione dei dati del modulo.",
@@ -834,7 +836,5 @@
     "mma.mod_url.accessurl": "Accedi all'URL",
     "mma.mod_url.pointingtourl": "URL dove punta la risorsa",
     "mma.mod_wiki.map": "Mappa",
-    "mma.mod_wiki.notingroup": "Non è in un gruppo",
-    "mma.mod_imscp.deploymenterror": "Si è verificato un errore nel content package!",
-    "mma.mod_imscp.showmoduledescription": "Visualizza descrizione"
+    "mma.mod_wiki.notingroup": "Non è in un gruppo"
 }

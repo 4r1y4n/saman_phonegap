@@ -858,13 +858,13 @@
     "mma.mod_survey.responses": "Réponses",
     "mma.mod_survey.results": "Résultats",
     "mma.mod_survey.surveycompletednograph": "Vous avez terminé ce sondage.",
+    "mma.mod_url.accessurl": "Accéder à l'URL",
+    "mma.mod_url.pointingtourl": "URL vers laquelle cette ressource dirige",
     "mma.mod_wiki.errorloadingpage": "Une erreur est survenue lors du chargement de la page.",
     "mma.mod_wiki.errornowikiavailable": "Aucun wiki à consulter",
     "mma.mod_wiki.gowikihome": "Vers l'accueil du wiki",
     "mma.mod_wiki.map": "Carte",
     "mma.mod_wiki.notingroup": "Pas dans le groupe",
     "mma.mod_wiki.subwiki": "Sous-wiki",
-    "mma.mod_wiki.viewpage": "Consulter la page",
-    "mma.mod_url.accessurl": "Accéder à l'URL",
-    "mma.mod_url.pointingtourl": "URL vers laquelle cette ressource dirige"
+    "mma.mod_wiki.viewpage": "Consulter la page"
 }
