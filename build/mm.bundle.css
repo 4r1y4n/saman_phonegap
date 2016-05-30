@@ -8485,25 +8485,6 @@ a.wiki_edit_section {
 .mma-mod_wiki-subwiki-picker .item.item-selected .icon {
   font-size: 24px; }
 
-.qbehaviour_deferredcbm_actual_percentage {
-  font-weight: bold; }
-
-.qbehaviour_deferredcbm_judgementok {
-  font-weight: bold;
-  color: #080; }
-
-.qbehaviour_deferredcbm_slightlyunderconfident, .qbehaviour_deferredcbm_slightlyoverconfident {
-  font-weight: bold;
-  color: #600; }
-
-.qbehaviour_deferredcbm_underconfident, .qbehaviour_deferredcbm_overconfident {
-  font-weight: bold;
-  color: #c00; }
-
-.mma-qbehaviour-deferredcbm-certainty-title, .item.mma-qbehaviour-deferredcbm-certainty-title, .item.mma-qbehaviour-deferredcbm-certainty-title p {
-  font-weight: bold;
-  font-size: 16px; }
-
 .mma-qtype-ddimageortext-container mm-loading {
   position: absolute;
   left: 50%; }
@@ -8749,6 +8730,93 @@ a.wiki_edit_section {
   margin-top: -4px;
   margin-right: 7px; }
 
+.qbehaviour_deferredcbm_actual_percentage {
+  font-weight: bold; }
+
+.qbehaviour_deferredcbm_judgementok {
+  font-weight: bold;
+  color: #080; }
+
+.qbehaviour_deferredcbm_slightlyunderconfident, .qbehaviour_deferredcbm_slightlyoverconfident {
+  font-weight: bold;
+  color: #600; }
+
+.qbehaviour_deferredcbm_underconfident, .qbehaviour_deferredcbm_overconfident {
+  font-weight: bold;
+  color: #c00; }
+
+.mma-qbehaviour-deferredcbm-certainty-title, .item.mma-qbehaviour-deferredcbm-certainty-title, .item.mma-qbehaviour-deferredcbm-certainty-title p {
+  font-weight: bold;
+  font-size: 16px; }
+
 .button.active, .button.activated {
   box-shadow: none;
   color: #fff; }
+
+.pane, .view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ecf9fe;
+  overflow: hidden; }
+
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated {
+  border-color: #ccc;
+  background-color: #004b8d; }
+
+.item-complex.item-positive > .item-content {
+  border-color: #0c60ee;
+  background-color: #387ef5;
+  color: #f5f5f5; }
+
+.item-complex.item-calm > .item-content {
+  border-color: #0a9dc7;
+  background-color: #11c1f3;
+  color: #f5f5f5; }
+
+.item-complex.item-assertive > .item-content {
+  border-color: #e42112;
+  background-color: #ef473a;
+  color: #f5f5f5; }
+
+.item-complex.item-balanced > .item-content {
+  border-color: #28a54c;
+  background-color: #33cd5f;
+  color: #f5f5f5; }
+
+.item-complex.item-energized > .item-content {
+  border-color: #e6b500;
+  background-color: #ffc900;
+  color: #f5f5f5; }
+
+.item-complex.item-royal > .item-content {
+  border-color: #6b46e5;
+  background-color: #886aea;
+  color: #f5f5f5; }
+
+.item-complex.item-dark > .item-content {
+  border-color: #111;
+  background-color: #444;
+  color: #f5f5f5; }
+
+.item-divider {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-height: 30px;
+  background-color: #ecf9fe;
+  color: #222;
+  font-weight: 500; }
+
+.dark, a.dark {
+  color: #f5f5f5; }
+
+ion-side-menu.menu .item {
+  background-color: #0271bd; }
+
+ion-side-menu.menu .item-divider {
+  background-color: #ecf9fe;
+  color: #f5f5f5; }
