@@ -25,7 +25,7 @@ angular.module('mm.core')
 
     var self = {},
         fallbackLanguage = 'en',
-        currentLanguage; // Save current language in a variable to speed up the get function.
+        currentLanguage = 'fa'; // Save current language in a variable to speed up the get function.
 
     /**
      * Register a folder to search language files into it.
@@ -62,7 +62,7 @@ angular.module('mm.core')
         if (typeof currentLanguage != 'undefined') {
             return $q.when(currentLanguage);
         }
-	return mmCoreConfigConstants.default_lang || fallbackLanguage;
+
         // Get current language from config (user might have changed it).
         return $mmConfig.get('current_language').then(function(language) {
             return language;

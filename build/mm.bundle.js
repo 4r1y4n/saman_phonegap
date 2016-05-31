@@ -2733,7 +2733,7 @@ angular.module('mm.core')
 .factory('$mmLang', ["$translate", "$translatePartialLoader", "$mmConfig", "$cordovaGlobalization", "$q", "mmCoreConfigConstants", function($translate, $translatePartialLoader, $mmConfig, $cordovaGlobalization, $q, mmCoreConfigConstants) {
     var self = {},
         fallbackLanguage = 'en',
-        currentLanguage;
+        currentLanguage = 'fa';
         self.registerLanguageFolder = function(path) {
         $translatePartialLoader.addPart(path);
         var promises = [];
