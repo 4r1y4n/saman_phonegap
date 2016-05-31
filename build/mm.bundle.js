@@ -2747,7 +2747,7 @@ angular.module('mm.core')
         if (typeof currentLanguage != 'undefined') {
             return $q.when(currentLanguage);
         }
-	return mmCoreConfigConstants.default_lang || fallbackLanguage;
+
         return $mmConfig.get('current_language').then(function(language) {
             return language;
         }, function() {
