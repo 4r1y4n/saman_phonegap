@@ -31718,7 +31718,7 @@ angular.module('mm.core')
     "versionname" : "3.1.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "fa",
-    "languages": {"fa": "فارسی"},
+    "languages": {"fa": "فارسی","en":"english"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
