@@ -8826,19 +8826,14 @@ ion-side-menu.menu .item.activated {
   background-color: #004b8d; }
 
 .menu .bar-header {
-  background-color: #0271bd;
-  color: #28b6ea; }
+  background-color: #28b6ea;
+  color: #0271bd; }
 
 .bar-side-menu .item-avatar h2, .bar-side-menu .item-media h2, .bar-side-menu .item-avatar .item .item-heading, .item .bar-side-menu .item-avatar .item-heading, .bar-side-menu .item-media .item .item-heading, .item .bar-side-menu .item-media .item-heading, .bar-side-menu .item-avatar p, .bar-side-menu .item-media p {
-  color: #28b6ea; }
+  color: #0271bd; }
 
 body, .ionic-body {
   /*direction: rtl;*/ }
-
-.item-avatar, .item-media {
-  padding-left: 0px;
-  padding-right: 72px;
-  min-height: 72px; }
 
 .item-avatar > img:first-child, .item-media > img:first-child {
   position: absolute;
@@ -8861,3 +8856,9 @@ body, .ionic-body {
 
 .item, .item h1, .item h2, .item .item-heading, .item .item-heading, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content .item .item-heading, .item .item-content .item-heading, .item-content .item .item-heading, .item .item-content .item-heading, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
   direction: rtl; }
+
+ion-side-menu.menu .item-avatar, ion-side-menu.menu .item-media, .item-avatar, .item-media {
+  background-color: #28b6ea;
+  padding-left: 0px;
+  padding-right: 72px;
+  min-height: 72px; }
