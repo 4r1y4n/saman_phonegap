@@ -25,7 +25,7 @@ angular.module('mm.core')
 
     var self = {},
         fallbackLanguage = 'en',
-        currentLanguage = 'fa'; // Save current language in a variable to speed up the get function.
+        currentLanguage; // Save current language in a variable to speed up the get function.
 
     /**
      * Register a folder to search language files into it.

@@ -8766,7 +8766,7 @@ a.wiki_edit_section {
 
 .item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated {
   border-color: #ccc;
-  background-color: #D9D9D9; }
+  background-color: #004b8d; }
 
 .item-complex.item-positive > .item-content {
   border-color: #0c60ee;
@@ -8820,38 +8820,3 @@ ion-side-menu.menu .item {
 ion-side-menu.menu .item-divider {
   background-color: #ecf9fe;
   color: #f5f5f5; }
-
-ion-side-menu.menu .item.activated {
-  border-color: #ccc;
-  background-color: #004b8d; }
-
-.menu .bar-header {
-  background-color: #0271bd;
-  color: #28b6ea; }
-
-.bar-side-menu .item-avatar h2, .bar-side-menu .item-media h2, .bar-side-menu .item-avatar .item .item-heading, .item .bar-side-menu .item-avatar .item-heading, .bar-side-menu .item-media .item .item-heading, .item .bar-side-menu .item-media .item-heading, .bar-side-menu .item-avatar p, .bar-side-menu .item-media p {
-  color: #28b6ea; }
-
-body, .ionic-body {
-  direction: rtl; }
-
-.item-avatar, .item-media {
-  padding-left: 0px;
-  padding-right: 72px;
-  min-height: 72px; }
-
-.item-avatar > img:first-child, .item-media > img:first-child {
-  position: absolute;
-  top: 16px;
-  left: initial;
-  right: 16px;
-  max-width: 40px;
-  max-height: 40px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; }
-
-.bar .button.back-button {
-  position: absolute;
-  left: 5px;
-  direction: ltr; }
