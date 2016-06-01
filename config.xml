@@ -3,8 +3,8 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "ir.sb247.lms"
-        versionCode = "2013"
-        version   = "3.1.1">
+        versionCode = "2014"
+        version   = "3.1.2">
     <name>آموزش مجازی آکادمی بانک سامان</name>
 
     <description>

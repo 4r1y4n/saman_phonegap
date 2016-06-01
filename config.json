@@ -1,7 +1,7 @@
 {
     "app_id" : "ir.sb247.lms",
-    "versioncode" : "2013",
-    "versionname" : "3.1.1",
+    "versioncode" : "2014",
+    "versionname" : "3.1.2",
     "cache_expiration_time" : 300000,
     "languages": {"fa": "فارسی","en":"english"},
     "default_lang" : "fa",
