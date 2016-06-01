@@ -2733,7 +2733,7 @@ angular.module('mm.core')
 .factory('$mmLang', ["$translate", "$translatePartialLoader", "$mmConfig", "$cordovaGlobalization", "$q", "mmCoreConfigConstants", function($translate, $translatePartialLoader, $mmConfig, $cordovaGlobalization, $q, mmCoreConfigConstants) {
     var self = {},
         fallbackLanguage = 'en',
-        currentLanguage;
+        currentLanguage = 'fa';
         self.registerLanguageFolder = function(path) {
         $translatePartialLoader.addPart(path);
         var promises = [];
@@ -31717,7 +31717,7 @@ angular.module('mm.core')
     "versionname" : "3.1.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "fa",
-    "languages": {"fa": "فارسی"},
+    "languages": {"fa": "فارسی",'en':'english'},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "demo_sites": {},
