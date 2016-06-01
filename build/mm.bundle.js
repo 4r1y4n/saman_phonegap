@@ -17003,6 +17003,40 @@ angular.module('mm.addons.qtype_calculated')
     return self;
 }]);
 
+angular.module('mm.addons.qtype_calculatedmulti')
+.directive('mmaQtypeCalculatedMulti', ["$log", "$mmQuestionHelper", function($log, $mmQuestionHelper) {
+	$log = $log.getInstance('mmaQtypeCalculatedMulti');
+    return {
+        restrict: 'A',
+        priority: 100,
+        templateUrl: 'addons/qtype/multichoice/template.html',
+        link: function(scope) {
+        	$mmQuestionHelper.multiChoiceDirective(scope, $log);
+        }
+    };
+}]);
+
+angular.module('mm.addons.qtype_calculatedmulti')
+.factory('$mmaQtypeCalculatedMultiHandler', ["$mmaQtypeMultichoiceHandler", function($mmaQtypeMultichoiceHandler) {
+    var self = {};
+        self.isCompleteResponse = function(question, answers) {
+        return $mmaQtypeMultichoiceHandler.isCompleteResponseSingle(answers);
+    };
+        self.isEnabled = function() {
+        return true;
+    };
+        self.isGradableResponse = function(question, answers) {
+        return $mmaQtypeMultichoiceHandler.isGradableResponseSingle(answers);
+    };
+        self.isSameResponse = function(question, prevAnswers, newAnswers) {
+        return $mmaQtypeMultichoiceHandler.isSameResponseSingle(prevAnswers, newAnswers);
+    };
+        self.getDirectiveName = function(question) {
+        return 'mma-qtype-calculated-multi';
+    };
+    return self;
+}]);
+
 angular.module('mm.addons.qtype_calculatedsimple')
 .directive('mmaQtypeCalculatedSimple', ["$log", "$mmQuestionHelper", function($log, $mmQuestionHelper) {
 	$log = $log.getInstance('mmaQtypeCalculatedSimple');
@@ -19016,40 +19050,6 @@ angular.module('mm.addons.qtype_randomsamatch')
     };
         self.getDirectiveName = function(question) {
         return 'mma-qtype-random-sa-match';
-    };
-    return self;
-}]);
-
-angular.module('mm.addons.qtype_calculatedmulti')
-.directive('mmaQtypeCalculatedMulti', ["$log", "$mmQuestionHelper", function($log, $mmQuestionHelper) {
-	$log = $log.getInstance('mmaQtypeCalculatedMulti');
-    return {
-        restrict: 'A',
-        priority: 100,
-        templateUrl: 'addons/qtype/multichoice/template.html',
-        link: function(scope) {
-        	$mmQuestionHelper.multiChoiceDirective(scope, $log);
-        }
-    };
-}]);
-
-angular.module('mm.addons.qtype_calculatedmulti')
-.factory('$mmaQtypeCalculatedMultiHandler', ["$mmaQtypeMultichoiceHandler", function($mmaQtypeMultichoiceHandler) {
-    var self = {};
-        self.isCompleteResponse = function(question, answers) {
-        return $mmaQtypeMultichoiceHandler.isCompleteResponseSingle(answers);
-    };
-        self.isEnabled = function() {
-        return true;
-    };
-        self.isGradableResponse = function(question, answers) {
-        return $mmaQtypeMultichoiceHandler.isGradableResponseSingle(answers);
-    };
-        self.isSameResponse = function(question, prevAnswers, newAnswers) {
-        return $mmaQtypeMultichoiceHandler.isSameResponseSingle(prevAnswers, newAnswers);
-    };
-        self.getDirectiveName = function(question) {
-        return 'mma-qtype-calculated-multi';
     };
     return self;
 }]);
@@ -31420,25 +31420,6 @@ angular.module('mm.addons.mod_wiki')
 }]);
 
 angular.module('mm.addons.mod_quiz')
-.factory('$mmaQuizAccessDelayBetweenAttemptsHandler', function() {
-    var self = {};
-        self.isEnabled = function() {
-        return true;
-    };
-        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
-        return false;
-    };
-    return self;
-})
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
-    if ($mmaModQuizAccessRulesDelegate) {
-        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessDelayBetweenAttempts', 'quizaccess_delaybetweenattempts',
-                                '$mmaQuizAccessDelayBetweenAttemptsHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_quiz')
 .factory('$mmaQuizAccessIpAddressHandler', function() {
     var self = {};
         self.isEnabled = function() {
@@ -31454,6 +31435,25 @@ angular.module('mm.addons.mod_quiz')
     if ($mmaModQuizAccessRulesDelegate) {
         $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessIpAddress', 'quizaccess_ipaddress',
                                 '$mmaQuizAccessIpAddressHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_quiz')
+.factory('$mmaQuizAccessDelayBetweenAttemptsHandler', function() {
+    var self = {};
+        self.isEnabled = function() {
+        return true;
+    };
+        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
+        return false;
+    };
+    return self;
+})
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
+    if ($mmaModQuizAccessRulesDelegate) {
+        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessDelayBetweenAttempts', 'quizaccess_delaybetweenattempts',
+                                '$mmaQuizAccessDelayBetweenAttemptsHandler');
     }
 }]);
 
