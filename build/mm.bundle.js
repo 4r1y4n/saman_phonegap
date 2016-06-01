@@ -2809,6 +2809,7 @@ angular.module('mm.core')
         });
     });
 }]);
+
 angular.module('mm.core')
 .constant('mmCoreNotificationsSitesStore', 'notification_sites')
 .constant('mmCoreNotificationsComponentsStore', 'notification_components')
@@ -31420,25 +31421,6 @@ angular.module('mm.addons.mod_wiki')
 }]);
 
 angular.module('mm.addons.mod_quiz')
-.factory('$mmaQuizAccessIpAddressHandler', function() {
-    var self = {};
-        self.isEnabled = function() {
-        return true;
-    };
-        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
-        return false;
-    };
-    return self;
-})
-.run(["$mmAddonManager", function($mmAddonManager) {
-    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
-    if ($mmaModQuizAccessRulesDelegate) {
-        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessIpAddress', 'quizaccess_ipaddress',
-                                '$mmaQuizAccessIpAddressHandler');
-    }
-}]);
-
-angular.module('mm.addons.mod_quiz')
 .factory('$mmaQuizAccessDelayBetweenAttemptsHandler', function() {
     var self = {};
         self.isEnabled = function() {
@@ -31454,6 +31436,25 @@ angular.module('mm.addons.mod_quiz')
     if ($mmaModQuizAccessRulesDelegate) {
         $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessDelayBetweenAttempts', 'quizaccess_delaybetweenattempts',
                                 '$mmaQuizAccessDelayBetweenAttemptsHandler');
+    }
+}]);
+
+angular.module('mm.addons.mod_quiz')
+.factory('$mmaQuizAccessIpAddressHandler', function() {
+    var self = {};
+        self.isEnabled = function() {
+        return true;
+    };
+        self.isPreflightCheckRequired = function(quiz, attempt, prefetch, siteId) {
+        return false;
+    };
+    return self;
+})
+.run(["$mmAddonManager", function($mmAddonManager) {
+    var $mmaModQuizAccessRulesDelegate = $mmAddonManager.get('$mmaModQuizAccessRulesDelegate');
+    if ($mmaModQuizAccessRulesDelegate) {
+        $mmaModQuizAccessRulesDelegate.registerHandler('mmaQuizAccessIpAddress', 'quizaccess_ipaddress',
+                                '$mmaQuizAccessIpAddressHandler');
     }
 }]);
 

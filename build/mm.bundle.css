@@ -8833,7 +8833,7 @@ ion-side-menu.menu .item.activated {
   color: #28b6ea; }
 
 body, .ionic-body {
-  direction: rtl; }
+  /*direction: rtl;*/ }
 
 .item-avatar, .item-media {
   padding-left: 0px;
@@ -8855,3 +8855,9 @@ body, .ionic-body {
   position: absolute;
   left: 5px;
   direction: ltr; }
+
+.menu {
+  direction: rtl; }
+
+.item, .item h1, .item h2, .item .item-heading, .item .item-heading, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content .item .item-heading, .item .item-content .item-heading, .item-content .item .item-heading, .item .item-content .item-heading, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+  direction: rtl; }
