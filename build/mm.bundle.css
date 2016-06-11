@@ -8862,3 +8862,23 @@ ion-side-menu.menu .item-avatar, ion-side-menu.menu .item-media, .item-avatar, .
   padding-left: 0px;
   padding-right: 72px;
   min-height: 72px; }
+
+.bar {
+  direction: rtl; }
+
+div.mm-split-pane {
+  direction: rtl; }
+
+.mm-loading-content {
+  direction: rtl; }
+
+table.mma-grades-table th, table.mma-grades-table td {
+  text-align: right; }
+
+.mma-grades-table th img {
+  margin-right: -20px;
+  float: right; }
+
+.mma-grades-table th.item {
+  padding-right: 40px;
+  padding-left: 10px; }
